@@ -1,5 +1,5 @@
 <?php
-class BitSwitch {
+class BitSwitch implements ArrayAccess {
 	
 	private $labels = array();
 	private $val = 0;
@@ -84,5 +84,31 @@ class BitSwitch {
 		}
 		
 		return $serialized;
+	}
+	
+	/**
+	 * Object Access
+	 */
+	public function __get($bit) {
+		return $this->getBit($bit);
+	}
+	public function __set($bit, $val) {
+		return $this->setBit($bit, $val);
+	}
+	
+	/**
+	 * Array Access
+	 */
+	public function offsetGet($bit) {
+		return $this->getBit($bit);
+	}
+	public function offsetSet($bit, $val) {
+		return $this->setBit($bit, $val);
+	}
+	public function offsetExists($bit) {
+		return $this->getBit($bit);
+	}
+	public function offsetUnset($bit) {
+		return $this->setBit($bit, 0);
 	}
 }
