@@ -9,8 +9,7 @@ This is a port of my [BitSwitch ruby gem](http://github.com/KellyLSB/Bitswitch).
 
 ## Documentation for BitSwitch
 
-Documentation for BitSwitch is available on the wiki. The documentation is for the ruby gem. However it works exacly the same in PHP. I Will write a PHP documentation soon.
-https://github.com/KellyLSB/Bitswitch/wiki/How-to-use
+Documentation for BitSwitch is available on the wiki. https://github.com/KellyLSB/Bitswitch-PHP/wiki/How-to-use
 
 ## Contributing to BitSwitch
  
@@ -23,6 +22,10 @@ https://github.com/KellyLSB/Bitswitch/wiki/How-to-use
 ## Todo
 
 * Think about new stuff to add in.
+
+## Other Languages
+
+BitSwitch is also available in [Ruby](http://github.com/KellyLSB/Bitswitch), PHP
 
 ## Copyright
 
